@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11 - html</title>
+</head>
+
+<body>
+    <!--1. **Crie um formulário completo com `label`, `select`, `textarea` e botão.**
+    
+    🎯 *Objetivo:* Dominar os elementos de entrada e entender a importância da associação `label-for`.-->
+
+    <form>
+        <label for="name">
+            Nome: <input type="text" name="name" id="name" required>
+        </label>
+        <br>
+
+        <label for="email">
+            Email: <input type="email" name="email" id="email" required>
+        </label>
+        <br>
+
+        <label for="telephone">
+            Telefone: <input type="tel" name="telephone" id="telephone" required>
+        </label>
+        <br>
+
+        <label for="date">
+            Data de Nascimento: <input type="date" name="date" id="date">
+        </label>
+        <br>
+
+        <label for="age">
+            Idade: <input type="number" name="age" id="age" required>
+        </label>
+        <br>
+
+        <label for="site">
+            Website: <input type="url" name="site" id="site">
+        </label>
+        <br>
+
+        <label for="color">
+            Cor Favorita: <input type="color" name="color" id="color">
+        </label>
+        <br>
+
+
+        <fieldset>
+            <legend>Sexo:</legend>
+            <input type="radio" id="masculino" name="sexo" value="M">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="sexo" value="F">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="outro" name="sexo" value="O">
+            <label for="outro">Outro</label>
+        </fieldset>
+
+
+        <label for="arquivo">
+            Escolha um arquivo:
+            <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx">
+        </label>
+        <br>
+
+        <label for="message">
+            Escreva uma Mensagem: <textarea name="message" id="message"></textarea>
+        </label>
+
+    </form>
+</body>
+
+</html>
